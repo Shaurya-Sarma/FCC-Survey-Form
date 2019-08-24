@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Social media effects on students">
+        <meta name="keywords" content="Academics, Instagram, Snapchat, Grades">
+        <meta name="author" content="Shaurya Sarma">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">How Does Social Media Affect Students?</h1>
+            <p id="description">Please fill out the form below to contribute towards a psychological study</p>
+        </header>
+        <main>
+            <form id="survey-form" action="#">
+                <fieldset class="survey-row">
+                    <div class="left-field">
+                        <label for="name" id="name-label">*Full Name: </label>
+                    </div>
+                    <div class="right-field">
+                        <input type="text" id="name" name="name" placeholder="Last, First" class="input-field" required autofocus>
+                    </div>
+                </fieldset>
+                <fieldset class="survey-row">
+                    <div class="left-field">
+                        <label for="email" id="email-label">*Email: </label>
+                    </div>
+                    <div class="right-field">
+                        <input type="email" id="email" name="email" placeholder="Enter a valid email address" class="input-field"required autofocus>
+                    </div>
+                </fieldset>
+                <fieldset class="survey-row">
+                    <div class="left-field">
+                        <label for="date" id="date-label">*Date Of Birth: </label>
+                    </div>
+                    <div class="right-field">
+                        <input type="date" id="date" name="date" class="input-field" required autofocus style="width: 10em;">
+                    </div>
+                </fieldset>
+                <fieldset class="survey-row">
+                    <div class="left-field">
+                        <label for="number" id="number-label">*Class Performance: </label>
+                    </div>
+                    <div class="right-field">
+                        <input type="number" id="number" name="number" class="input-field" placeholder="Enter your average score" min="0" max="100" required autofocus>
+                    </div>
+                </fieldset>
+                <fieldset class="survey-row">
+                    <div class="left-field">
+                        <label for="dropdown" id="dropdown-label">Which option best describes your academic level? </label>
+                    </div>
+                    <div class="right-field">
+                        <select id="dropdown" name="dropdown" class="input-field">
+                            <option value="placeholder" disabled selected>Select an option</option>
+                            <option value="Elementary">Elementary</option>
+                            <option value="Middle">Middle</option>
+                            <option value="High">High</option>
+                            <option value="College">College</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="survey-row">
+                    <div class="left-field">
+                        <label for="radio" id="radio-label">*How frequently do you use social media? </label>
+                    </div>
+                    <div class="right-field" id="radio-group">
+                        <label><input type="radio" name="Frequency" value="Minute" class="radio" required>Almost Every Minute <br></label>
+                        <label><input type="radio" name="Frequency" value="Hour" class="radio" required>Every Hour <br></label>
+                        <label><input type="radio" name="Frequency" value="Daily" class="radio" required>Daily <br></label>
+                        <label><input type="radio" name="Frequency" value="Weekly"class="radio" required>Once or twice every week<br></label>
+                        <label><input type="radio" name="Frequency" value="Monthly"class="radio" required>A few times per month <br></label>
+                        <label><input type="radio" name="Frequency" value="Never"class="radio" required>I don't even have an account <br> </label>
+                    </div>
+                </fieldset>
+                <fieldset class="survey-row">
+                    <div class="left-field">
+                        <label for="social" id="checkbox-label">Which of the following do you have an active account? </label>
+                    </div>
+                    <div class="right-field" id="checkbox-group">
+                        <label><input type="checkbox" name="account1" value="Instagram"class="input-field" id="social"> Instagram <br> </label>
+                        <label><input type="checkbox" name="account2" value="Facebook"class="input-field"> Facebook <br></label>
+                        <label><input type="checkbox" name="account3" value="Snapchat"class="input-field"> Snapchat <br></label>
+                        <label><input type="checkbox" name="account4" value="Youtube"class="input-field"> Youtube <br></label>
+                        <label><input type="checkbox" name="account5" value="Twiiter"class="input-field"> Twitter <br> </label>
+                        <label><input type="checkbox" name="account1" value="Pinterest"class="input-field"> Pinterest <br></label>
+                        <label><input type="checkbox" name="account1" value="Tumblr"class="input-field"> Tumblr <br></label>
+                        <label><input type="checkbox" name="account1" value="Other"class="input-field"> Other <br></label>
+                    </div>
+                </fieldset>
+                <fieldset class="survey-row">
+                    <div class="left-field">
+                        <label for="opinion" id="textarea-label">Do you think social media affects your study habits negatively or positively? How and why? </label>
+                    </div>
+                    <div class="right-field">
+                        <textarea id="opinion" class="input-field" name="opinions" placeholder="Enter your comments here..." rows="5" cols='10'></textarea>
+                    </div>
+                </fieldset>
+                <a href="#"><button id="submit" type="submit">Submit</button></a>
+            </form>
+        </main>
+    </body>
+</html>
